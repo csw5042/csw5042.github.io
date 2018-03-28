@@ -1,0 +1,49 @@
+<!doctype html> <!-- tableSpan.html -->
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial=scale=1"/>
+  <style> table, tr, th, td {
+    border: 1px solid black; border-collapse: collapse;
+  }
+  .subject1 { background-color:#F5A9A9;}
+  .subject2 { background-color:#F78181;}
+  .fontcolor {color:#FA5858;}
+  .bgcolor { background-color:#FBEFEF;}
+  </style> <!-- border-collapse: collapse 단선으로, 반대는 separate -->
+  <title>HTML5 테이블 스팬 실습</title></head>
+  <body>
+    <table width=480 height=120 class="bgcolor fontcolor" >
+    <tr>
+      <th>시간</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th>
+    </tr>
+    <tr>
+      <th>1</th><th>--</th><th>--</th><th>--</th><th>--</th><th>--</th>
+    </tr>
+    <tr>
+      <th>2</th><th>--</th><th>--</th><th>--</th><th>--</th><th>--</th>
+    </tr>
+    <tr>
+    <th>3</th><th></th><th></th><th rowspan="2" class="subject1"><span style="color:white">자료구조 밑 실습<br>24414<br/></span></th><th rowspan="2" class="subject1"><span style="color:white">자료구조 밑 실습<br>24414<br/></span></th><th></th>
+    </tr>
+    <tr>
+      <th>4</th><th>--</th><th>--</th><th>--</th>
+    </tr>
+    <tr>
+    <th>5</th><th></th><th></th><th></th><th rowspan="2" class="subject2"><span style="color:white">인터넷 프로그래밍<br>24403<br/></span></th><th></th>
+    </tr>
+    <tr>
+      <th>6</th><th>--</th><th>--</th><th>--</th><th>--</th>
+    </tr>
+    <tr>
+      <th>7</th><th>--</th><th>--</th><th>--</th><th>--</th><th>--</th>
+    </tr>
+    <tr>
+    <th>8</th><th></th><th></th><th rowspan="2" class="subject2"><span style="color:white">인터넷 프로그래밍<br>24403<br/></span></th><th></th><th></th>
+    </tr>
+    <tr>
+      <th>9</th><th>--</th><th>--</th><th>--</th><th>--</th>
+    </tr>
+    </table>
+  </body>
+</html>
