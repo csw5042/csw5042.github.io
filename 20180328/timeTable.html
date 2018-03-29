@@ -8,29 +8,37 @@
   }
   .subject1 { background-color:#F5A9A9;}
   .subject2 { background-color:#F78181;}
+  .day { background-color:#FA5858;}
   .fontcolor {color:#FA5858;}
   .bgcolor { background-color:#FBEFEF;}
   </style> <!-- border-collapse: collapse 단선으로, 반대는 separate -->
+  <script>
+    function onclick1() { document.getElementById("id_1").innerHTML="교수님 : 우훈식 교수님<br/>강의실 : 24403</i><br/>";
+    }
+    function onclick2() { document.getElementById("id_1").innerHTML="교수님 : 이경휘 교수님<br/>강의실 : 24414</i><br/>";
+    }
+    </script>
   <title>시간표</title></head>
   <body>
+  <h2>시간표</h2>
     <table class="bgcolor fontcolor" >
-    <tr>
+    <tr class="day" style="color:white">
       <th>시간</th><th width=120>월</th><th width=120>화</th><th>수</th><th>목</th><th width=120>금</th>
     </tr>
     <tr>
-      <th>1</th><th>--</th><th>--</th><th>--</th><th>--</th><th>--</th>
+    <th>1</th><th>--</th><th>--</th><th>--</th><th>--</th><th>--</th>
     </tr>
     <tr>
       <th>2</th><th>--</th><th>--</th><th>--</th><th>--</th><th>--</th>
     </tr>
     <tr>
-    <th>3</th><th>--</th><th>--</th><th rowspan="2" class="subject1"><span style="color:white">자료구조 밑 실습<br>24414<br/></span></th><th rowspan="2" class="subject1"><span style="color:white">자료구조 밑 실습<br>24414<br/></span></th><th>--</th>
+    <th>3</th><th>--</th><th>--</th><th rowspan="2" class="subject1"><span style="color:white"><p onclick="onclick2()">자료구조 밑 실습</p></span></th><th rowspan="2" class="subject1"><span style="color:white"><p onclick="onclick2()">자료구조 밑 실습</p></span></th><th>--</th>
     </tr>
     <tr>
       <th>4</th><th>--</th><th>--</th><th>--</th>
     </tr>
     <tr>
-    <th>5</th><th>--</th><th>--</th><th>--</th><th rowspan="2" class="subject2"><span style="color:white">인터넷 프로그래밍<br>24403<br/></span></th><th>--</th>
+    <th>5</th><th>--</th><th>--</th><th>--</th><th rowspan="2" class="subject2"><span style="color:white"><p onclick="onclick1()">인터넷 프로그래밍</p></span></th><th>--</th>
     </tr>
     <tr>
       <th>6</th><th>--</th><th>--</th><th>--</th><th>--</th>
@@ -39,11 +47,12 @@
       <th>7</th><th>--</th><th>--</th><th>--</th><th>--</th><th>--</th>
     </tr>
     <tr>
-    <th>8</th><th>--</th><th>--</th><th rowspan="2" class="subject2"><span style="color:white">인터넷 프로그래밍<br>24403<br/></span></th><th>--</th><th>--</th>
+    <th>8</th><th>--</th><th>--</th><th rowspan="2" class="subject2"><span style="color:white"><p onclick="onclick1()">인터넷 프로그래밍</p></span></th><th>--</th><th>--</th>
     </tr>
     <tr>
       <th>9</th><th>--</th><th>--</th><th>--</th><th>--</th>
     </tr>
     </table>
+    <p id="id_1">과목명 클릭</p>
   </body>
 </html>
