@@ -6,30 +6,31 @@
     <style>
     * {margin:0; padding:0;}
     p {text-align:justify;}
-    .clear1 {clear:both; margin:20px; padding:20px; width:100%; height:100px; border:1px solid blue;}
-    .float1 {float:left; margin:20px; padding:20px; width:24%; height:300px; border:1px solid blue;}
-    .float2 {float:left; margin:20px; padding:20px; width:49%; height:300px; border:1px solid blue;}
-    .float3 {float:left; margin:20px; padding:20px; width:24%; height:300px; border:1px solid blue;}
-    .clear2 {clear:both; margin:20px; padding:20px; width:100%; height:100px; border:1px solid blue;}
+    .border1 {border:1px solid blue;}
+    .clear1 {clear:both; margin:20px; padding:20px; width:90%; height:20px;}
+    .float1 {float:left; margin:20px; padding:20px; width:25%; height:300px;}
+    .float2 {float:left; margin:20px; padding:20px; width:48%; height:300px;}
+    aside {float:left; margin:20px; padding:20px; width:25%; height:300px;}
+    footer {clear:both; margin:20px; padding:20px; width:100%; height:100px;}
     </style>
   <title>CSS float 과제</title>
 </head>
   <body><section><h4>부유 과제</h4>
-    <div class="clear1"><h4>
+    <div class="clear1 border1"><h4>
     Header
     </h4></div>
-    <div class="float1"><h4>
+    <div class="float1 border1"><h4>
     Nav <h4>(Menu)</h4>
     </h4></div>
-    <div class="float2"><h4>
+    <div class="float2 border1"><h4>
     Contents
     </h4></div>
-    <div class="float3"><h4>
+    <aside class="border1"><h4>
     Aside(Banner)
-    </h4></div>
-    <div class="clear2"><h4>
+    </h4></aside>
+    <footer class="border1"><h4>
     Footer
-    </h4></div>
+    </h4></footer>
   </section>
   </body>
 </html>
