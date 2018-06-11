@@ -1,0 +1,92 @@
+<!doctype html> <!-- e-Portfolio.html -->
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <style>
+    * {box-sizing:border-box; padding:0; margin:0; }
+    .bgcolor1 { background-color:#FA5858}
+    .bgcolor2 { background-color:white}
+    .main {border:1px solid #BDBDBD;}
+    .row::after {content:""; clear:both; display:table;}
+    [class*="col-"] { float:left; padding:10px;}
+    .header, .footer{background-color:#2EFE9A; color:#0B3B24; padding:10px;  box-shadow:0 1px 3px gray;}
+    .menu ul, .banner ul {list-style-type:none;}
+    .menu li {background-color:#A9F5D0; color:black; padding:10px; margin-bottom:10px; box-shadow:0 1px 3px gray; }
+    .menu li:hover{background-color:#088A68;}
+    .banner li {border:1px solid #BDBDBD; padding:10px; margin-bottom:10px; box-shadow:0 1px 3px gray;}
+    .banner li img{width:30%; vertical-align:middle;}
+    [class*="col-"] {width:100%;}
+    @media only screen and (min-width: 600px){
+      .col-m-1 {width:8.33%;}
+      .col-m-2 {width:16.66%;}
+      .col-m-3 {width:25%;}
+      .col-m-4 {width:33.33%;}
+      .col-m-5 {width:41.66%;}
+      .col-m-6 {width:50%;}
+      .col-m-7 {width:58.33%;}
+      .col-m-8 {width:66.66%;}
+      .col-m-9 {width:75%;}
+      .col-m-10 {width:83.33%;}
+      .col-m-11 {width:91.66%;}
+      .col-m-12 {width:100%;}
+    }
+    @media only screen and (min-width: 768px){
+      .col-1 {width:8.33%;}
+      .col-2 {width:16.66%;}
+      .col-3 {width:25%;}
+      .col-4 {width:33.33%;}
+      .col-5 {width:41.66%;}
+      .col-6 {width:50%;}
+      .col-7 {width:58.33%;}
+      .col-8 {width:66.66%;}
+      .col-9 {width:75%;}
+      .col-10 {width:83.33%;}
+      .col-11 {width:91.66%;}
+      .col-12 {width:100%;}
+    }
+    </style>
+  <title>포트폴리오 과제</title>
+</head>
+  <body>
+    <header class="header">
+      <h1>e-Portfolio</h1></header>
+      <div class="row"></div>
+      <div id="main">
+        <nav class="col-3 col-m-3 menu bgcolor2">
+          <ul><li>Info</li>
+          <a href="https://csw5042.github.io/" target="_blank"><li>Project Views</li></a>
+          <a href="https://www.naver.com"><li>Course</li></a>
+          <a href="https://www.naver.com"><li></li></a>
+          </ul>
+        </nav>
+        <section class="col-6 col-m-9 main">
+          <h2>최성우</h2>
+          <h4>
+          Contact
+          </h4>
+          <ol style="list-style-type:square">
+            <li>1992.05.29</li>
+            <li>대전대학교<br/>컴퓨터공학과</li>
+            <li>충남 천안시</li>
+            <li>+82 10-****-5042</li>
+            <li>cs*****@naver.com</li>
+          </ol>
+          <picture>
+            <source media="(min-width:768px)" srcset="../20180614/dju_big.png">
+            <source media="(min-width:600px)" srcset="../20180614/dju_normal.png">
+            <img src="../20180614/dju_small.png" alt="대전대" style="width:auto;">
+          </picture>
+        </section>
+        <aside class="col-3 col-m-12 banner">
+          <ul><li><img src="../20180614/flag.png">한국</li>
+          <li><img src="../20180614/flag.png">Korea</li>
+          </ul>
+        </aside>
+      </div>
+      <div class="row"></div>
+    <footer class="footer"><h4>
+    Copyright 20XX Korea.
+    </h4></footer>
+  </body>
+</html>
