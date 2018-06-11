@@ -1,0 +1,105 @@
+<!doctype html> <!-- course.html -->
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <style>
+    * {box-sizing:border-box; padding:0; margin:0; }
+    .bgcolor1 { background-color:#FA5858}
+    .bgcolor2 { background-color:white}
+    .main {border:1px solid #BDBDBD;}
+    .row::after {content:""; clear:both; display:table;}
+    [class*="col-"] { float:left; padding:10px;}
+    .header, .footer{background-color:#2EFE9A; color:#0B3B24; padding:10px;  box-shadow:0 1px 3px gray;}
+    .menu ul, .banner ul {list-style-type:none;}
+    .menu li {background-color:#A9F5D0; color:black; padding:10px; margin-bottom:10px; box-shadow:0 1px 3px gray; }
+    .menu p {background-color:#A9F5D0; color:black; padding:10px; margin-bottom:10px; box-shadow:0 1px 3px gray; }
+    .menu li:hover{background-color:#088A68;}
+    .menu p:hover{background-color:#088A68;}
+    .banner li {border:1px solid #BDBDBD; padding:10px; margin-bottom:10px; box-shadow:0 1px 3px gray;}
+    .banner li img{width:30%; vertical-align:middle;}
+    [class*="col-"] {width:100%;}
+    @media only screen and (min-width: 600px){
+      .col-m-1 {width:8.33%;}
+      .col-m-2 {width:16.66%;}
+      .col-m-3 {width:25%;}
+      .col-m-4 {width:33.33%;}
+      .col-m-5 {width:41.66%;}
+      .col-m-6 {width:50%;}
+      .col-m-7 {width:58.33%;}
+      .col-m-8 {width:66.66%;}
+      .col-m-9 {width:75%;}
+      .col-m-10 {width:83.33%;}
+      .col-m-11 {width:91.66%;}
+      .col-m-12 {width:100%;}
+    }
+    @media only screen and (min-width: 768px){
+      .col-1 {width:8.33%;}
+      .col-2 {width:16.66%;}
+      .col-3 {width:25%;}
+      .col-4 {width:33.33%;}
+      .col-5 {width:41.66%;}
+      .col-6 {width:50%;}
+      .col-7 {width:58.33%;}
+      .col-8 {width:66.66%;}
+      .col-9 {width:75%;}
+      .col-10 {width:83.33%;}
+      .col-11 {width:91.66%;}
+      .col-12 {width:100%;}
+    }
+    </style>
+    <script>
+    function onclick1() { document.getElementById("course").innerHTML="교양필수 : 캠퍼스멘토링<br/>교양필수 : 실용한자<br/>교양필수 : 엑셀<br/>교양필수 : 플래시<br/>교양필수 : 컴퓨터프로그래밍<br/>교양필수 : 수학1<br/>교양필수 : 과학기술의 융합적이해<br/>교양필수 : 스포츠건강체력<br/>교양필수 : 글쓰기기초1<br/>교양필수 : 공학설계<br/>";
+    }
+    function onclick2() { document.getElementById("course").innerHTML="교양필수 : 캠퍼스멘토링<br/>교양필수 : 생활영어<br/>교양필수 : 대학일본어(1)<br/>교양필수 : 발표와토론<br/>교양필수 : 이산수학<br/>교양필수 : 프로그래밍 기초<br/>";
+    }
+    function onclick3() { document.getElementById("course").innerHTML="교양필수 : 캠퍼스멘토링<br/>교양필수 : 대학영어(1)교양필수 : 일본문학의이해<br/>전공필수 : 객체지향프로그래밍<br/>전공선택 : 컴퓨터구조<br/>전공선택 : 컴퓨터게임디자인";
+    }
+    function onclick4() { document.getElementById("course").innerHTML="교양필수 : 캠퍼스멘토링<br/>교양필수 : 대학영어(2)<br/>전공필수 : 디지털논리회로<br/>전공필수 : 수치계산및응용<br/>전공필수 : 윈도우프로그래밍<br/>전공선택 : 파일구조<br/>교양선택 : 농촌봉사활동(계절학기)<br/>";
+    }
+    function onclick5() { document.getElementById("course").innerHTML="교양필수 : 캠퍼스멘토링<br/>교양필수 : 대학영어(3)<br/>교양선택 : 화요명사특강<br/>교양선택 : 영화를통해세상을보다<br/>전공필수 : 컴퓨터 실무 프로젝트1<br/>전공선택 : 컴퓨터그래픽스<br/>전공선택 : 컴퓨터통신보안<br/>전공선택 : 운영체제<br/>";
+    }
+    function onclick6() { document.getElementById("course").innerHTML="교양필수 : 캠퍼스멘토링<br/>교양선택 : 생활과경제<br/>교양선택 : 트래킹과캠핑<br/>교양선택 : 프랑스축제와문화콘텐츠<br/>교양선택 : 대전학<br/>전공필수 : 컴퓨터 실무 프로젝트2<br/>전공선택 : 네트워크와데이터통신<br/>전공선택 : 데이터베이스<br/>전공선택 : 모바일 그래픽스<br/>교양선택 : 파워포인트(계절학기)";
+    }
+    function onclick7() { document.getElementById("course").innerHTML="교양필수 : 인문학의융합적이해(재)<br/>전공필수 : 캡스톤디자인(1)<br/>전공선택 : 데이터베이스프로그래밍<br/>전공선택 : 오토마타와응용<br/>전공선택 : 네트워크프로그래밍<br/>전공선택 : 전자 비즈니스 설계<br/>";
+    }
+    function onclick8() { document.getElementById("course").innerHTML="교양필수 : 한국고전의세계<br/>전공선택 : 컴퓨터시뮬레이션<br/>전공선택 : 시스템설계패턴<br/>전공선택 : 인공지능<br/>전공선택 : 캡스톤디자인(2)<br/>전공선택 : 데이터모델링<br/>교양필수 : 컴퓨터및IT의이해(계절학기, 재)<br/>교양필수 : 글쓰기심화(계절학기, 재)<br/>교양선택 : 말과논리<br/>";
+    }
+    function onclick9() { document.getElementById("course").innerHTML="전공선택 : 인터넷프로그래밍<br/>전공선택 : 자료구조및실습<br/>전공선택 : 프로젝트관리<br/>";
+    </script>
+  <title>포트폴리오 과제</title>
+</head>
+  <body>
+    <header class="header">
+      <h1>Course</h1></header>
+      <div class="row"></div>
+      <div id="main">
+        <nav class="col-3 col-m-3 menu bgcolor2">
+          <ul>
+          <p onclick="onclick1()">1학년1학기</p>
+          <p onclick="onclick2()">1학년2학기</p>
+          <p onclick="onclick3()">2학년1학기</p>
+          <p onclick="onclick4()">2학년2학기</p>
+          <p onclick="onclick5()">3학년1학기</p>
+          <p onclick="onclick6()">3학년2학기</p>
+          <p onclick="onclick7()">4학년1학기</p>
+          <p onclick="onclick8()">4학년2학기</p>
+          <p onclick="onclick9()">추가 학기</p>
+          </ul>
+        </nav>
+        <section class="col-6 col-m-9 main">
+          <h2>수강과목</h2>
+          <p id="course">학기 클릭</p>
+        </section>
+        <aside class="col-3 col-m-12 banner">
+          <ul><li><a href="https://csw5042.github.io/20180614/e-Portfolio.html">메인화면</a></li>
+          <li><img src="../20180614/flag.png">Korea</li>
+          </ul>
+        </aside>
+      </div>
+      <div class="row"></div>
+    <footer class="footer"><h4>
+    Copyright 20XX Korea.
+    </h4></footer>
+  </body>
+</html>
